@@ -18,7 +18,8 @@ output application/json
 ---
 {
 	message: payload,
-	success: "Application working with jenkins"
+	success: "Application working with jenkins",
+	test: "sample"
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
