@@ -59,18 +59,29 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-					<cloudHubDeployment>
-						<uri>https://anypoint.mulesoft.com/</uri>
-						<muleVersion>${app.runtime}</muleVersion>
-						<username>${username}</username>
-						<password>${password}</password>
-						<applicationName>${project.artifactId}</applicationName>
-						<environment>Sandbox</environment>
-						<workerType>${workerType}</workerType>
-						<workers>1</workers>
-						<objectStoreV2>true</objectStoreV2>						
-					<!-- 	<region> ${region} </region> -->
-					</cloudHubDeployment>
+						 <armDeployment>
+
+   <muleVersion>4.4.0</muleVersion>
+
+   <uri>https://anypoint.mulesoft.com</uri>
+
+   <target>${project.target}</target>
+
+   <targetType>${project.targetType}</targetType>
+
+   <username>${anypoint.username}</username>
+
+   <password>${anypoint.password}</password>
+
+   <environment>Sandbox</environment>
+
+ <businessGroup>Logus Business Systems India Pvt .Ltd</businessGroup>
+
+   <businessGroupId>${project.businessGroupId}</businessGroupId>
+
+    <applicationName>test1</applicationName>
+
+  </armDeployment>
 				</configuration>
 			</plugin>
 		</plugins>
